@@ -1,1 +1,4 @@
-{}
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8876bba3-426f-44b4-a983-b72fe53ed5c5/resourceGroups/Reactivities-group/providers/Microsoft.Web/sites/reactivities-markdave",
+    "appService.deploySubpath": "API\\bin\\Release\\net8.0\\publish"
+}

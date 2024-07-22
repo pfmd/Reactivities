@@ -4,7 +4,6 @@ import { Photo, Profile } from "../../app/models/profile";
 import { useStore } from "../../app/stores/store";
 import { SyntheticEvent, useState } from "react";
 import PhotoUploadWidget from "../../app/common/ImageUpload/PhotoUploadWidget";
-import { id } from "date-fns/locale";
 
 
 interface Props {
