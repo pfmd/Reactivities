@@ -16,18 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up NodeJS
-        uses: actions/setup-node@v3
-        with: 
-          node-version: '20'
-
-      - name: Install deps and build react app
-        run: |
-          cd client-app
-          npm install
-          npm run build
-
-
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
@@ -63,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_262C58DF8FE74AEB982323D8FE8BB750 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_765B3F48809F4738B5C836EB3C52ECA3 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1A9ECE416904449F941EE6E8E2BD9500 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_C674E71488264F1C8929A670C5743286 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_694456D29BFE4F2FB80A3474BA9B0E5C }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_913AD3BD0EA6476CABDDEA5E8A57A6DF }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
